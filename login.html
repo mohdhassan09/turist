@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <style type="text/css">
+        *{margin: 0%; padding: 0%;}
+        body{
+    background-color:bisque;
+}
+.containner{
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+    width:510px;
+    padding: 100px;
+    margin-top:10% ;
+    margin-left: 30%;
+    margin-bottom: 5%;
+}
+form{
+    position: relative;
+    margin-bottom: 10%;
+   
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: -20px
+    
+}
+.first{
+    position: relative;
+    left: 20px;
+    top: -3px;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 8px 12px;
+    box-shadow: none;
+    margin-bottom: 18%;
+}
+.last{
+    position: relative;
+    left: 40px;
+    top: -2px;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 8px 12px; 
+    box-shadow: none; 
+    
+ 
+}
+
+
+.sellable{
+    position: relative;
+    left:240px;
+    top: -11px;
+}
+
+   
+.city{
+    position: relative;
+    top: -93px;
+    
+}
+
+.codetlable{
+    position: relative;
+    top: -78px;
+}
+.code{
+    position: relative;
+    left: 21px;
+    top: -78px;
+    border: solid 1px;
+    border-radius: 5px;
+    padding:5px 0px ;
+    box-shadow: none;
+}
+.numlable{
+    position: relative;
+    top: -60px;
+}
+.number{
+    position: relative;
+    top: -60px;
+    left: 12px;
+    border: solid 1px;
+    border-radius: 5px;
+    padding:5px 0px;
+    box-shadow: none;
+}
+.addtlable{
+    position: relative;
+    left: -13px;
+    top: -38px;
+}
+.address{
+    position: relative;
+    left: -9px;
+    top: -38px;
+    border: solid 1px;
+    border-radius: 5px;
+    padding:20px 10px ;
+    box-shadow: none;
+}
+button{
+    position: relative;
+    left: 200px;
+    background-color: rgb(51, 139, 139);
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgb(54, 184, 184);
+}
+.create{
+    position: relative;
+    left:206px ;
+    top: 90px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background:burlywood;
+    color:darkred;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 1%;
+  }
+  
+  nav .logo {
+    width: 20%;
+    text-align: center;
+    /*background: red;*/
+  }
+  
+  nav .menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav .menu a {
+    width: 80%;
+    text-decoration: none;
+    color:darkred;
+    font-weight: bold;
+    font-size: 30px;
+    float: left;
+  }
+  
+                         
+
+  
+  nav .menu a:first-child {
+    color:darkred;
+    font-size: 30px;
+  }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"> <h1 style="font-size: 30px;"> Mera Bharat Mahan  </h1> </div>
+        <div class="menu">
+            <a href="webpage 1.html">Home</a>
+            <a href="image.html">gallery 
+             <a href=""> About</a>
+            <a href="#">contact</a>
+        </div>
+    </nav>
+<br><br><br><br>
+    <div class="containner">
+        <form>
+            <h3>Create Account</h3>
+            <label class="firstlable">Name</label>
+            <input type="text" class="first" placeholder="First Name"  maxlength="20">
+            <label class="lastlable" > </label>
+            <input type="text" class="last" placeholder="Last Name" maxlength="20"><br>
+             <label class="codetlable">Code</label>
+            <input type="text" class="code" placeholder="Pin code" onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="6"></input><br>
+            <label class="numlable">Phone</label>
+            <input type="text" class="number" placeholder="Number" onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10"></input><br>
+            <label class="addtlable">Address:</label>
+            <input type="text" class="address" placeholder="Write here"><br>
+            <button class="button">signup</button><br>
+           
+        </form>
+    </div>
+
+   
+</body>
+</html>
